@@ -4,34 +4,25 @@
 基于tensorflow的高阶api keras的手写汉字的识别
 
 #### 软件架构
-软件架构说明
+使用vggnet网络进行搭建
 
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  安装anaconda，创建python=3.7的环境
+2.  需要使用的库都在pagename.txt文件中，
+请使用python -m pip install -r pagename.txt命令进行安装
+
 
 #### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+代码来自https://github.com/yogurtcon/Handwritten-Chinese-character-recognition-system
+不过此仓库没有具体信息，教程等
+文字来源参考我另一个仓库https://gitee.com/Alabatens/casia-hwdb-decompression.git中的gnt2png.py
 
 
-#### 特技
+#### 程序说明
+data文件夹下是需要训练的数据
+后期需要识别的字放到original pic文件夹下，图片格式一定要用png，jpg无法识别
+跑多少轮在fit.py内更改epochs值就行，我训练了40轮，精度是87%左右
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+
